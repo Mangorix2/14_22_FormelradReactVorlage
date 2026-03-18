@@ -28,6 +28,7 @@ export default function Formelrad() {
         event.preventDefault();
         console.log("handleClear");
         setValues(values => ({...values, u:"", i:"", r:"", p:"", message: ""}))
+        resetColors();
     }
 
     const handleSubmit = (event) => {
@@ -42,7 +43,6 @@ export default function Formelrad() {
         if (count !== 2) {
             setValues(values => ({...values, message: "2 Felder leer lassen, 2 Felder ausfüllen"}));
         }else {
-            resetColors();
             setValues(values => ({...values, message: ""}));
 
             if (values.u === "" && values.i === "") {
