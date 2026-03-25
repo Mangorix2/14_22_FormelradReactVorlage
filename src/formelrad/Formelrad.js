@@ -1,5 +1,6 @@
 import '../css/mvp.css';
 import {useState} from "react";
+import '../css/mvp.css';
 import formelrad from "../image/formelradelektronik.gif";
 import InputField from "../formular/InputField";
 
@@ -7,9 +8,9 @@ export default function Formelrad() {
     const [values, setValues] = useState({
         u: 10,
         i: 2,
-        r: ""
+        r: "",
+        p: ""
     })
-
     return (
         <>
             <section>
